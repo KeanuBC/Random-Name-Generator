@@ -1,4 +1,4 @@
-# Random Name Generator v1.0.0
+# Random Name Generator
 
 ## Overview
 A simple Python utility that generates random full names using customizable text files containing first and last names.
