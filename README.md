@@ -1,40 +1,77 @@
 # Random Name Generator
 
-## Overview
-A simple Python utility that generates random full names using customizable text files containing first and last names.
+A lightweight Python random name generator that creates full names using customizable name lists.
 
-The generator uses keyboard shortcuts to quickly generate either male or female names without needing to interact with a menu.
+Generate male or female names instantly using simple keyboard shortcuts.
 
 ## Features
-- **Male Name Generation:** Generates random male full names.
-- **Female Name Generation:** Generates random female full names.
-- **Custom Name Lists:** Uses separate text files for male first names, female first names, and last names.
-- **Keyboard Shortcuts:** Generate names instantly using M and F.
-- **Simple Operation:** Runs in the background and prints generated names directly to the console.
 
-## Controls
-- **M:** Generate a random male name.
-- **F:** Generate a random female name.
-- **ESC:** Exit the generator.
+- Random male full name generation.
+- Random female full name generation.
+- Customizable first and last name lists.
+- Instant generation using keyboard shortcuts.
+- Simple console-based interface.
 
 ## Requirements
+
 - Python 3
-- keyboard Python library
+- `keyboard` library
+
+## Installation
+
+Install the required Python dependency:
+
+```bash
+python -m pip install keyboard
+```
+
+Download or clone this repository and open the Python script.
 
 ## Configuration
-Before running the script, edit the three file paths at the top of the Python script:
 
-- `MALE_FIRST_NAMES_FILE`
-- `FEMALE_FIRST_NAMES_FILE`
-- `LAST_NAMES_FILE`
+Before running, configure the file paths at the top of the script:
+
+```python
+MALE_FIRST_NAMES_FILE = r"C:\PATH\TO\MALE_NAMES.txt"
+FEMALE_FIRST_NAMES_FILE = r"C:\PATH\TO\FEMALE_NAMES.txt"
+LAST_NAMES_FILE = r"C:\PATH\TO\LAST_NAMES.txt"
+```
 
 Each text file should contain one name per line.
 
-## Notes
-- Generated names are selected randomly from the provided text files.
+### Example name list
+
+```text
+John
+Michael
+David
+James
+Robert
+```
+
+## Usage
+
+Run the script:
+
+```bash
+python random_name_generator.py
+```
+
+### Keyboard Controls
+
+| Key | Action |
+|---|---|
+| M | Generate a male name |
+| F | Generate a female name |
+| ESC | Exit the generator |
+
+## Additional Notes
+
+- Names are randomly selected from the provided text files.
 - First names and last names are selected independently.
-- Names can repeat between generations.
-- The keyboard library may require administrator privileges on some systems.
+- Duplicate name generations are possible.
+- Some systems may require administrator privileges for global keyboard detection.
 
 ## License
-Distributed under the MIT License.
+
+This project is licensed under the [MIT License](LICENSE).
